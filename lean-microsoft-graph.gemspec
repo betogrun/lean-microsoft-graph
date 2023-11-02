@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/lean/microsoft/graph/version"
+require_relative "lib/lean_microsoft_graph/version"
 
 Gem::Specification.new do |spec|
   spec.name = "lean-microsoft-graph"
-  spec.version = Lean::Microsoft::Graph::VERSION
+  spec.version = LeanMicrosoftGraph::VERSION
   spec.authors = ["Alberto Rocha"]
   spec.email = ["betogrun@gmail.com"]
 
