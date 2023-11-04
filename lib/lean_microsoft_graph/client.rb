@@ -10,6 +10,12 @@ module LeanMicrosoftGraph
       @stubs = stubs # Stubs for testing purpouses
     end
 
+    def users
+      Resources::UsersResource.new(connection)
+    end
+
+    private
+
     def connection
       @connection ||= Faraday.new(url: 'https://graph.microsoft.com/v1.0') do |faraday|
         faraday.request :authorization, 'Bearer', proc(&token_retriever)
@@ -18,8 +24,6 @@ module LeanMicrosoftGraph
         faraday.adapter @adapter, @stubs
       end
     end
-
-    private
 
     def token_retriever
       @token_retriever ||= begin
