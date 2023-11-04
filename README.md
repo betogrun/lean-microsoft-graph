@@ -22,7 +22,37 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To start using the LeanMicrosoftGraph gem, you need to create a client instance by providing the tenant_id, client_id, and client_secret.
+
+### Initialize the client
+
+```ruby
+client = LeanMicrosoftGraph::Client.new(
+  tenant_id: 'your_tenant_id',
+  client_id: 'your_client_id',
+  client_secret: 'your_client_secret'
+)
+```
+
+Replace 'your_tenant_id', 'your_client_id', and 'your_client_secret' with your actual Microsoft Azure credentials.
+
+### Count the number of users
+
+```ruby
+count = client.users.count
+puts "Number of users: #{count}"
+```
+
+### Retrieving all users
+
+```ruby
+per_page = 10 # Set the number of users you want per page
+users = client.users.get_all(per_page)
+
+users.each do |user|
+  puts "User ID: #{user.id}"
+end
+```
 
 ## Development
 
