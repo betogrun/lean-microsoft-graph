@@ -26,7 +26,7 @@ class LeanMicrosoftGraph::ClientTest < Minitest::Test
       stubs: @stubs
     )
 
-    response = client.connection.get('/v1.0/test_endpoint')
+    response = client.send(:connection).get('/v1.0/test_endpoint')
 
     assert_equal 200, response.status
     assert_equal 'test', JSON.parse(response.body)['data']

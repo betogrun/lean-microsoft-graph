@@ -11,4 +11,7 @@ module LeanMicrosoftGraph
   require 'lean_microsoft_graph/authentication/token_retriever'
   require 'lean_microsoft_graph/resources/token_resource'
   require 'lean_microsoft_graph/resources/token_resource/token'
+  require 'lean_microsoft_graph/resources/users_resource'
+  require 'lean_microsoft_graph/resources/users_resource/user'
+  require 'lean_microsoft_graph/resources/users_resource/users'
 end
