@@ -23,8 +23,6 @@ module LeanMicrosoftGraph
       error_message = parsed_response[:error_description]
       error_code = parsed_response[:error_codes]
 
-      puts parsed_response
-
       case { status: response.status, code: error_code, message: error_message }
       in { status: 400, code: code, message: message }
         raise Error, "Bad request. Code: #{code}. Message: #{message}"
