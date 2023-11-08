@@ -1,8 +1,6 @@
-# Lean::Microsoft::Graph
+# LeanMicrosoftGraph
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lean/microsoft/graph`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Lean Microsoft Graph is a lightweight gem designed for Ruby developers who need to interact with the Microsoft Graph API but are constrained by the use of Faraday version 1. This gem bridges this gap, providing an interface with Microsoft Graph API.
 
 ## Installation
 
