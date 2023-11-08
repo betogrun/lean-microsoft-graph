@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lean-microsoft-graph (0.1.0)
+    lean-microsoft-graph (0.2.0)
       faraday (~> 1.10)
       faraday_middleware (~> 1.0)
 
@@ -41,6 +41,7 @@ GEM
     ruby2_keywords (0.0.5)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -50,4 +51,4 @@ DEPENDENCIES
   rake (~> 13.0)
 
 BUNDLED WITH
-   2.2.31
+   2.2.33
