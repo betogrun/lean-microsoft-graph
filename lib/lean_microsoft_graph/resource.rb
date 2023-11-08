@@ -20,8 +20,7 @@ module LeanMicrosoftGraph
     	parsed_response = JSON.parse(response.body, symbolize_names: true)
       return parsed_response if (200..299).include?(response.status)
 
-      error_message = parsed_response[:error_description]
-      error_code = parsed_response[:error_codes]
+      error_message, error_code = parse_error(parsed_response)
 
       case { status: response.status, code: error_code, message: error_message }
       in { status: 400, code: code, message: message }
@@ -41,6 +40,17 @@ module LeanMicrosoftGraph
       else
         raise Error, "An unknown error occurred with status: #{response.status}."
       end
+    end
+
+    def parse_error(parsed_response)
+      if parsed_response[:error].is_a?(Hash)
+        error_code = parsed_response[:error][:code]
+        error_message = parsed_response[:error][:message]
+      else
+        error_code = parsed_response[:error_codes]
+        error_message = parsed_response[:error_description]
+      end
+      [error_message, error_code]
     end
   end
 end
