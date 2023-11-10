@@ -39,6 +39,16 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
+
+      - name: Check version consistency
+        run: |
+          TAG_VERSION=${GITHUB_REF#refs/tags/v}
+          GEM_VERSION=$(ruby -e "require './lib/your_gem_name/version'; puts LeanMicrosoftGraph::VERSION")
+          if [ "$TAG_VERSION" != "$GEM_VERSION" ]; then
+            echo "Tag version ($TAG_VERSION) does not match gem version ($GEM_VERSION)"
+            exit 1
+          fi
+
       - name: Publish to RubyGems
         run: |
           mkdir -p $HOME/.gem
