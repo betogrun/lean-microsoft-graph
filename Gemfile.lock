@@ -33,7 +33,7 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    minitest (5.20.0)
+    minitest (5.22.3)
     mocha (2.1.0)
       ruby2_keywords (>= 0.0.5)
     multipart-post (2.3.0)
@@ -46,7 +46,7 @@ PLATFORMS
 
 DEPENDENCIES
   lean-microsoft-graph!
-  minitest (~> 5.0)
+  minitest (~> 5.22)
   mocha (~> 2.1)
   rake (~> 13.0)
 
