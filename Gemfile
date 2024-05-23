@@ -9,4 +9,4 @@ gem "rake", "~> 13.2"
 
 gem "minitest", "~> 5.23"
 
-gem 'mocha', '~> 2.2'
+gem 'mocha', '~> 2.3'
