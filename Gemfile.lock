@@ -34,7 +34,7 @@ GEM
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
     minitest (5.23.1)
-    mocha (2.3.0)
+    mocha (2.4.4)
       ruby2_keywords (>= 0.0.5)
     multipart-post (2.4.1)
     rake (13.2.1)
@@ -47,7 +47,7 @@ PLATFORMS
 DEPENDENCIES
   lean-microsoft-graph!
   minitest (~> 5.23)
-  mocha (~> 2.3)
+  mocha (~> 2.4)
   rake (~> 13.2)
 
 BUNDLED WITH
