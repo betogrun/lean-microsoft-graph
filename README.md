@@ -52,6 +52,16 @@ users.each do |user|
 end
 ```
 
+### Retrieving a user by id
+
+```ruby
+user_id = 'your_user_id' # Replace 'your_user_id' with the actual user id
+user = client.users.get_by_id(user_id)
+
+puts "User ID: #{user.id}"
+puts "User Display Name: #{user.display_name}"
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

@@ -39,6 +39,17 @@ class LeanMicrosoftGraph::Resources::UsersResourceTest < Minitest::Test
     assert_nil users.next_batch_reference
   end
 
+  def test_get_user_by_id
+    id = '1'
+    @stubs.get("/users/#{id}") do |_env|
+      [200, {}, { id: id }.to_json]
+    end
+
+    user = @users_resource.get_user_by_id(id)
+
+    assert_equal id, user.id
+  end
+
   def teardown
     @stubs.verify_stubbed_calls
   end

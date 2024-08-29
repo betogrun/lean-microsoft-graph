@@ -22,6 +22,12 @@ module LeanMicrosoftGraph
 
         Users.new(response)
       end
+
+      def get_user_by_id(user_id)
+        response = get_request("users/#{user_id}")
+
+        User.new(response)
+      end
     end
   end
 end
