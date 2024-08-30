@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- Upgrade dependencies: mocha and minitest.
+- Upgrade dependencies: faraday, mocha and minitest.
 
 ## [0.2.4] - 2024-05-23
 
