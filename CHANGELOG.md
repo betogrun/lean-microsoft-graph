@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.3.4] - 2024-08-30
+
+### Added
+
+- Ability to retrieve users by id with `client.users.get_by_id('id')`.
+
+### Changed
+
+- Upgrade dependencies: faraday, mocha and minitest.
+
 ## [0.2.4] - 2024-05-23
 
 ### Changed
@@ -60,6 +70,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Initial release
 
+[0.3.4]: https://github.com/betogrun/lean_microsoft_graph/releases/tag/v0.3.4
 [0.2.4]: https://github.com/betogrun/lean_microsoft_graph/releases/tag/v0.2.4
 [0.2.3]: https://github.com/betogrun/lean_microsoft_graph/releases/tag/v0.2.3
 [0.2.2]: https://github.com/betogrun/lean_microsoft_graph/releases/tag/v0.2.2
