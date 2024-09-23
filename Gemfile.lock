@@ -2,13 +2,13 @@ PATH
   remote: .
   specs:
     lean-microsoft-graph (0.3.4)
-      faraday (~> 1.10)
+      faraday (>= 1.10, < 3.0)
       faraday_middleware (~> 1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    faraday (1.10.3)
+    faraday (1.10.4)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
