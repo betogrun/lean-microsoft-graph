@@ -1,5 +1,6 @@
 
 require 'test_helper'
+require 'ostruct'
 
 class LeanMicrosoftGraph::Resources::TokenResourceTest < Minitest::Test
   def setup

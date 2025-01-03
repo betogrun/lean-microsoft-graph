@@ -1,5 +1,5 @@
 require 'faraday'
-require 'faraday_middleware'
+require 'faraday/retry'
 require 'json'
 
 module LeanMicrosoftGraph

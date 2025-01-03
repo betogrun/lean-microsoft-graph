@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'faraday/retry'
+
 module LeanMicrosoftGraph
   class Client
     def initialize(tenant_id:, client_id:, client_secret:, adapter: Faraday.default_adapter, stubs: nil)
