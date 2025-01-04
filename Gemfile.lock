@@ -33,7 +33,7 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    minitest (5.25.1)
+    minitest (5.25.4)
     mocha (2.7.1)
       ruby2_keywords (>= 0.0.5)
     multipart-post (2.4.1)
