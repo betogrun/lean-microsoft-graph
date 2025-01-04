@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Add devcontainer configuration.
+- Automated gem documentation using YARD and GitHub Pages.
 
 ### Changed
 
