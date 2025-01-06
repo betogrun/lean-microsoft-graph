@@ -10,10 +10,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Add devcontainer configuration.
 - Automated gem documentation using YARD and GitHub Pages.
+- Added faraday-retry gem for retry middleware support.
 
 ### Changed
 
 - Improved CHANGELOG.md file.
+- Upgraded faraday gem to version 2.12.
+- Updated the README to reflect faraday changes
 
 ## [0.3.4] - 2024-08-30
 
