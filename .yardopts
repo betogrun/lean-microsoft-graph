@@ -1,0 +1,10 @@
+--markup markdown
+--markup-provider redcarpet
+--readme README.md
+--title 'LeanMicrosoftGraph'
+--protected
+--private
+lib/**/*.rb
+-
+LICENSE.txt
+CHANGELOG.md

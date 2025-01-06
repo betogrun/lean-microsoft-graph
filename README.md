@@ -1,6 +1,7 @@
 # LeanMicrosoftGraph
 
-Lean Microsoft Graph is a lightweight gem designed for Ruby developers who need to interact with the Microsoft Graph API. This gem bridges this gap, providing an interface with Microsoft Graph API.
+Lean Microsoft Graph is a lightweight gem designed for Ruby developers who need to interact with the Microsoft Graph API but are constrained by the use of Faraday version 1. This gem bridges this gap, providing an interface with Microsoft Graph API.
+The gem documentation can be found at [https://betogrun.github.io/lean-microsoft-graph](https://betogrun.github.io/lean-microsoft-graph).
 
 ## Installation
 
@@ -68,9 +69,20 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## Documentation
+
+The complete documentation for this gem is available at: https://electionbuddy.github.io/electionbuddy-ruby
+
+You can also generate the documentation locally using:
+
+```bash
+yard doc
+yard server
+```
+
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lean-microsoft-graph.
+Bug reports and pull requests are welcome on GitHub at https://github.com/betogrun/lean-microsoft-graph.
 
 ## License
 
