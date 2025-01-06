@@ -8,6 +8,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Added faraday-retry gem for retry middleware support.
+
+### Changed
+
+- Upgraded faraday gem to version 2.12.
+- Updated the README to reflect faraday changes
+
+### Added
+
 - Add devcontainer configuration.
 - Automated gem documentation using YARD and GitHub Pages.
 
