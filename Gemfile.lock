@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lean-microsoft-graph (0.3.4)
+    lean-microsoft-graph (0.4.0)
       faraday (~> 2.12)
       faraday-retry (~> 2.2)
 
