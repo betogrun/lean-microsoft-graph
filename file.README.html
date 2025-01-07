@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; LeanMicrosoftGraph
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'><h1 id="leanmicrosoftgraph">LeanMicrosoftGraph</h1>
+
+<p>Lean Microsoft Graph is a lightweight gem designed for Ruby developers who need to interact with the Microsoft Graph API. This gem bridges this gap, providing an interface with Microsoft Graph API.
+The gem documentation can be found at <a href="https://betogrun.github.io/lean-microsoft-graph">https://betogrun.github.io/lean-microsoft-graph</a>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Add this line to your application&#39;s Gemfile:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>lean-microsoft-graph</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre class="code ruby"><code class="ruby">$ bundle install
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre class="code ruby"><code class="ruby">$ gem install lean-microsoft-graph
+</code></pre>
+
+<h2 id="usage">Usage</h2>
+
+<p>To start using the LeanMicrosoftGraph gem, you need to create a client instance by providing the tenant_id, client_id, and client_secret.</p>
+
+<h3 id="initialize-the-client">Initialize the client</h3>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_client'>client</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="LeanMicrosoftGraph.html" title="LeanMicrosoftGraph (module)">LeanMicrosoftGraph</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="LeanMicrosoftGraph/Client.html" title="LeanMicrosoftGraph::Client (class)">Client</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="LeanMicrosoftGraph/Client.html#initialize-instance_method" title="LeanMicrosoftGraph::Client#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+  <span class='label'>tenant_id:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>your_tenant_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>client_id:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>your_client_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>client_secret:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>your_client_secret</span><span class='tstring_end'>&#39;</span></span>
+<span class='rparen'>)</span>
+</code></pre>
+
+<p>Replace &#39;your_tenant_id&#39;, &#39;your_client_id&#39;, and &#39;your_client_secret&#39; with your actual Microsoft Azure credentials.</p>
+
+<h3 id="count-the-number-of-users">Count the number of users</h3>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_count'>count</span> <span class='op'>=</span> <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_users'>users</span><span class='period'>.</span><span class='id identifier rubyid_count'>count</span>
+<span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Number of users: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_count'>count</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<h3 id="retrieving-all-users">Retrieving all users</h3>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_per_page'>per_page</span> <span class='op'>=</span> <span class='int'>10</span> <span class='comment'># Set the number of users you want per page
+</span><span class='id identifier rubyid_users'>users</span> <span class='op'>=</span> <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_users'>users</span><span class='period'>.</span><span class='id identifier rubyid_get_all'>get_all</span><span class='lparen'>(</span><span class='id identifier rubyid_per_page'>per_page</span><span class='rparen'>)</span>
+
+<span class='id identifier rubyid_users'>users</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>User ID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span>
+</code></pre>
+
+<h3 id="retrieving-a-user-by-id">Retrieving a user by id</h3>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_user_id'>user_id</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>your_user_id</span><span class='tstring_end'>&#39;</span></span> <span class='comment'># Replace &#39;your_user_id&#39; with the actual user id
+</span><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_users'>users</span><span class='period'>.</span><span class='id identifier rubyid_get_by_id'>get_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span><span class='rparen'>)</span>
+
+<span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>User ID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>User Display Name: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_display_name'>display_name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<h2 id="development">Development</h2>
+
+<p>After checking out the repo, run <code>bin/setup</code> to install dependencies. Then, run <code>rake test</code> to run the tests. You can also run <code>bin/console</code> for an interactive prompt that will allow you to experiment.</p>
+
+<p>To install this gem onto your local machine, run <code>bundle exec rake install</code>. To release a new version, update the version number in <code>version.rb</code>, and then run <code>bundle exec rake release</code>, which will create a git tag for the version, push git commits and the created tag, and push the <code>.gem</code> file to <a href="https://rubygems.org">rubygems.org</a>.</p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>The complete documentation for this gem is available at: <a href="https://electionbuddy.github.io/electionbuddy-ruby">https://electionbuddy.github.io/electionbuddy-ruby</a></p>
+
+<p>You can also generate the documentation locally using:</p>
+
+<pre class="code bash"><code class="bash">yard doc
+yard server
+</code></pre>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Bug reports and pull requests are welcome on GitHub at <a href="https://github.com/betogrun/lean-microsoft-graph">https://github.com/betogrun/lean-microsoft-graph</a>.</p>
+
+<h2 id="license">License</h2>
+
+<p>The gem is available as open source under the terms of the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+</div></div>
+
+      <div id="footer">
+  Generated on Tue Jan  7 18:07:07 2025 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.37 (ruby-3.2.6).
+</div>
+
+    </div>
+  </body>
+</html>

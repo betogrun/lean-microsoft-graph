@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: CHANGELOG
+  
+    &mdash; LeanMicrosoftGraph
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "CHANGELOG";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: CHANGELOG</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'><h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this project will be documented in this file.</p>
+
+<p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>.</p>
+
+<h2 id="unreleased">[Unreleased]</h2>
+
+<h3 id="fixed">Fixed</h3>
+
+<ul>
+<li>Fix typo in CHANGELOG.md.</li>
+</ul>
+
+<h2 id="0-4-0-2025-01-07"><a href="https://github.com/betogrun/lean-microsoft-graph/compare/v0.3.4...v0.4.0">0.4.0</a> - 2025-01-07</h2>
+
+<h3 id="added">Added</h3>
+
+<ul>
+<li>Add devcontainer configuration.</li>
+<li>Automated gem documentation using YARD and GitHub Pages.</li>
+<li>Added faraday-retry gem for retry middleware support.</li>
+</ul>
+
+<h3 id="changed">Changed</h3>
+
+<ul>
+<li>Improved CHANGELOG.md file.</li>
+<li>Upgraded faraday gem to version 2.12.</li>
+<li>Updated the README to reflect faraday changes</li>
+</ul>
+
+<h2 id="0-3-4-2024-08-30"><a href="https://github.com/betogrun/lean-microsoft-graph/compare/v0.2.4...v0.3.4">0.3.4</a> - 2024-08-30</h2>
+
+<h3 id="added">Added</h3>
+
+<ul>
+<li>Ability to retrieve users by id with <code>client.users.get_by_id(&#39;id&#39;)</code>.</li>
+</ul>
+
+<h3 id="changed">Changed</h3>
+
+<ul>
+<li>Upgrade dependencies: faraday, mocha and minitest.</li>
+</ul>
+
+<h2 id="0-2-4-2024-05-23"><a href="https://github.com/betogrun/lean-microsoft-graph/compare/v0.2.3...v0.2.4">0.2.4</a> - 2024-05-23</h2>
+
+<h3 id="changed">Changed</h3>
+
+<ul>
+<li>Upgrade dependencies: mocha and minitest.</li>
+</ul>
+
+<h2 id="0-2-3-2024-05-04"><a href="https://github.com/betogrun/lean-microsoft-graph/compare/v0.2.2...v0.2.3">0.2.3</a> - 2024-05-04</h2>
+
+<h3 id="added">Added</h3>
+
+<ul>
+<li>Dependabot configuration file to keep dependencies up to date.</li>
+</ul>
+
+<h3 id="changed">Changed</h3>
+
+<ul>
+<li>Upgrade dependencies: mocha, rake, and minitest.</li>
+</ul>
+
+<h2 id="0-2-2-2023-11-11"><a href="https://github.com/betogrun/lean-microsoft-graph/compare/v0.2.1...v0.2.2">0.2.2</a> - 2023-11-11</h2>
+
+<h3 id="added">Added</h3>
+
+<ul>
+<li>Check consistency of gem version with git tag.</li>
+</ul>
+
+<h3 id="fixed">Fixed</h3>
+
+<ul>
+<li>Fix issue that prevented gem from being loaded.</li>
+</ul>
+
+<h2 id="0-2-1-2023-11-09"><a href="https://github.com/betogrun/lean-microsoft-graph/compare/v0.2.0...v0.2.1">0.2.1</a> - 2023-11-09</h2>
+
+<h3 id="added">Added</h3>
+
+<ul>
+<li>Missing tests for resource class.</li>
+<li>Github action to run tests on push and pull requests.</li>
+<li>Github action to publish new versions to Rubygems.</li>
+</ul>
+
+<h3 id="fixed">Fixed</h3>
+
+<ul>
+<li>Fix error message parser when handling responses.</li>
+</ul>
+
+<h3 id="removed">Removed</h3>
+
+<ul>
+<li>The .tool-versions file from repository. Now it is ignored.</li>
+</ul>
+
+<h2 id="0-2-0-2023-11-04"><a href="https://github.com/betogrun/lean-microsoft-graph/releases/tag/v0.2.0">0.2.0</a> - 2023-11-04</h2>
+
+<h3 id="added">Added</h3>
+
+<ul>
+<li>Ability to count users with <code>client.users.count</code>.</li>
+<li>Ability to retrieve users per page with <code>client.users.get_all(per_page)</code>.</li>
+<li>Ability to retrieve users by reference with <code>client.users.get_all_by_reference(&#39;reference&#39;)</code>.</li>
+</ul>
+
+<h2 id="0-1-0-2023-08-28">[0.1.0] - 2023-08-28</h2>
+
+<ul>
+<li>Initial release</li>
+</ul>
+</div></div>
+
+      <div id="footer">
+  Generated on Tue Jan  7 18:07:07 2025 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.37 (ruby-3.2.6).
+</div>
+
+    </div>
+  </body>
+</html>
