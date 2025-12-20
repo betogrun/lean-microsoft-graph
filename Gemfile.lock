@@ -30,7 +30,7 @@ GEM
     redcarpet (3.6.0)
     ruby2_keywords (0.0.5)
     uri (1.0.3)
-    webrick (1.9.1)
+    webrick (1.9.2)
     yard (0.9.37)
 
 PLATFORMS
