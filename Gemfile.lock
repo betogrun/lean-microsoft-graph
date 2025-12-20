@@ -2,19 +2,24 @@ PATH
   remote: .
   specs:
     lean-microsoft-graph (0.4.0)
+      base64 (~> 0.2.0)
       faraday (~> 2.0)
       faraday-retry (~> 2.0)
+      logger (~> 1.6)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.2.0)
     faraday (2.0.0)
       ruby2_keywords (>= 0.0.4)
     faraday-retry (2.3.2)
       faraday (~> 2.0)
+    logger (1.7.0)
     minitest (5.25.4)
     mocha (2.7.1)
       ruby2_keywords (>= 0.0.5)
+    ostruct (0.6.3)
     rack (3.2.4)
     rackup (2.2.1)
       rack (>= 3)
@@ -33,6 +38,7 @@ DEPENDENCIES
   lean-microsoft-graph!
   minitest (~> 5.0)
   mocha (~> 2.0)
+  ostruct (~> 0.6.0)
   rack (~> 3.2)
   rackup (~> 2.0)
   rake (~> 13.3)
