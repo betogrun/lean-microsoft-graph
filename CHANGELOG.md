@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Update CI/CD workflows to test against Ruby 3.3 and 3.4.
 - Update devcontainer to use Ruby 3.4 with Debian Bookworm.
+- Relax dependency version constraints to allow automatic minor and patch updates.
 
 ### Fixed
 
