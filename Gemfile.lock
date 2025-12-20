@@ -27,7 +27,7 @@ GEM
     redcarpet (3.6.0)
     ruby2_keywords (0.0.5)
     webrick (1.9.2)
-    yard (0.9.37)
+    yard (0.9.38)
 
 PLATFORMS
   arm64-darwin-23
@@ -44,7 +44,7 @@ DEPENDENCIES
   rake (~> 13.3)
   redcarpet (~> 3.0)
   webrick (~> 1.9)
-  yard (~> 0.9.0)
+  yard (~> 0.9.38)
 
 BUNDLED WITH
   4.0.2

@@ -13,5 +13,5 @@ gem 'rackup', '~> 2.0'
 gem 'rake', '~> 13.3'
 gem 'redcarpet', '~> 3.0'
 gem 'webrick', '~> 1.9'
-gem 'yard', '~> 0.9.0'
+gem 'yard', '~> 0.9.38'
 
